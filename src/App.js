@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Box from './Components/Box/Box';
+import ContactBtn from './Components/ContactBtn/ContactBtn';
+import DonateBtn from './Components/DonateBtn/DonateBtn';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="Header">DareGenerator.com</header>
+        <Box />
+        <DonateBtn />
+        <ContactBtn />
+      <footer className="Footer">Version 0.0.1</footer>
     </div>
   );
 }
