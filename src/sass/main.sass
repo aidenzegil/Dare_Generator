@@ -1,0 +1,52 @@
+@import components
+@import contactBtnStyles
+
+.app
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  animation: gradient 15s ease infinite
+  background: linear-gradient(-45deg, #cf1259, #e83f21, #3d51a4, #A754DE,)
+  background-size: 400% 400%
+  
+@keyframes gradient 
+	0% 
+		background-position: 0% 50%
+	
+	50% 
+		background-position: 100% 50%
+	
+	100% 
+		background-position: 0% 50%
+
+.Info	
+  position: absolute
+  font-family: Nova Round
+  font-style: normal
+  font-weight: normal
+  color: #C4C4C4
+  mix-blend-mode: hard-light
+
+
+.Header 
+  @extend .Info
+  left: 15px
+  top: 15px
+  font-size: 35px
+
+.Footer 
+  @extend .Info
+  left: 15px
+  bottom: 15px
+  font-size: 20px
+  cursor: pointer
+
+@media screen and (max-width: 600px) 
+  .Header
+      display: none
+
+@media screen and (max-width: 600px) 
+  .Footer
+      display: none

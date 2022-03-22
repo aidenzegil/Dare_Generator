@@ -1,0 +1,262 @@
+@import url("https://css.gg/instagram.css");
+.Btn, .SubmitBtn {
+  height: 75px;
+  max-height: 75px;
+  background: #505050;
+  -webkit-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.39);
+          box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.39);
+  border-radius: 25px;
+  font-family: Nova Round;
+  font-size: 50px;
+  line-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(255, 0, 0, 0.25);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.Btn:hover, .SubmitBtn:hover {
+  background-color: #cf1259;
+}
+
+.SubmitBtn {
+  width: 75px;
+  max-height: 28px;
+  height: 28px;
+  font-size: 15px;
+  line-height: 15px;
+  display: inline;
+}
+
+.Container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  height: 400px;
+  background: #c4c4c46e;
+  -webkit-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.25);
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.Text, .TitleText, .GeneratedDareText {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-family: Nova Round;
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TitleText {
+  margin-top: 15px;
+  padding-bottom: 25px;
+}
+
+.GeneratedDareText {
+  padding-top: 15px;
+  margin: auto;
+  width: 100vw;
+  max-width: 95%;
+}
+
+.Input {
+  margin-top: 30px;
+  height: 28px;
+  color: rgba;
+  width: 300px;
+}
+
+.DareWrap {
+  width: 600px;
+  max-width: 100%;
+  position: relative;
+  height: 150px;
+}
+
+.NavBtnWrap {
+  margin-left: auto;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.PopupBtnWrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 15px;
+  margin-top: 100px;
+}
+
+.PopupBox {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #000000a8;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.Box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  height: 400px;
+  background: #A754DE;
+  border-radius: 25px;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.IgWrapper {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  z-index: 4;
+}
+
+.gg-instagram {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0 0 0 2px;
+          box-shadow: 0 0 0 2px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  color: #C4C4C4;
+  mix-blend-mode: hard-light;
+}
+
+.app {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #cf1259, #e83f21, #3d51a4, #A754DE);
+  background-size: 400% 400%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Info, .Header, .Footer {
+  position: absolute;
+  font-family: Nova Round;
+  font-style: normal;
+  font-weight: normal;
+  color: #C4C4C4;
+  mix-blend-mode: hard-light;
+}
+
+.Header {
+  left: 15px;
+  top: 15px;
+  font-size: 35px;
+}
+
+.Footer {
+  left: 15px;
+  bottom: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .Header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

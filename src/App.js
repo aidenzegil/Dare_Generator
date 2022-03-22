@@ -1,15 +1,15 @@
-import './App.css';
 import Box from './Components/Box/Box';
 import ContactBtn from './Components/ContactBtn/ContactBtn';
+import './sass/main.css';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header className="Header">DareGenerator.com</header>
         <Box />
         <ContactBtn />
-      <footer className="Footer">Version 0.0.1</footer>
+      <footer title="Version 1.0.2: Now Mobile Compatible!" className="Footer">Version 0.0.1</footer>
     </div>
   );
 }
