@@ -5,66 +5,58 @@ import '../../config'
 import dareGrabber from '../../Utils/DareGrabber'
 
 const Box = () => {
-  const [HomeDivShown, setHomeDivShown] = useState(true)
-  
-  const [popupOpen, setPopupOpen] = useState(false);
-  
-  const [daresList, setDaresList] = useState({})
-  
-  const [newDare, setNewDare] = useState("")
+  const [HomeDivShown, setHomeDivShown] = useState(true);
 
-  const [dare, setDare] = useState('Try Again')
+  const [popupOpen, setPopupOpen] = useState(false);
+
+  const [daresList, setDaresList] = useState({});
+
+  const [newDare, setNewDare] = useState("");
+
+  const [dare, setDare] = useState("Try Again");
 
   const db = getDatabase();
-  const daresRef = ref(db, 'dares')
+  const daresRef = ref(db, "dares");
 
-   window.onload = 
-    function getDaresList() {
-      onValue(daresRef, (snapshot) => {
-        const newDaresList = Object.values(snapshot.val())
-        console.log(newDaresList)
-        setDaresList(newDaresList)
-      })
-    }
+  window.onload = function getDaresList() {
+    onValue(daresRef, (snapshot) => {
+      const newDaresList = Object.values(snapshot.val());
+      console.log(newDaresList);
+      setDaresList(newDaresList);
+    });
+  };
 
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
+  function divSwitch() {
+    if (HomeDivShown !== true) setHomeDivShown(true);
+    else setHomeDivShown(false);
+  }
 
+  function writeDare() {
+    update(daresRef, {
+      [newDare]: newDare,
+    });
+    setNewDare("");
+  }
 
-    const togglePopup = () => {
-      setPopupOpen(!popupOpen);
-    }
-    function divSwitch() {
-      if(HomeDivShown !== true) 
-      setHomeDivShown(true)
-      else
-      setHomeDivShown(false)
-    }
+  function readDare() {
+    const newDare = dareGrabber(daresList);
+    setDare(newDare);
+  }
 
-    function writeDare() {
-      update(daresRef, {
-        [newDare]:newDare
-      })
-      setNewDare("")
-    }
+  const handleInput = (event) => {
+    setNewDare(event.target.value);
+  };
 
-    function readDare() {
-      const newDare = dareGrabber(daresList)
-      setDare(newDare)
-    }
+  const DareAndPopup = () => {
+    const newDare = dareGrabber(daresList);
+    setDare(newDare);
+    setPopupOpen(!popupOpen);
+  };
 
-
-    const handleInput = (event) => {
-      setNewDare(event.target.value)
-    }
-
-    const DareAndPopup = () => {
-        const newDare = dareGrabber(daresList)
-        setDare(newDare)
-        setPopupOpen(!popupOpen)
-      }
-    
-
-
-      return (
+return (
         <div style={{maxWidth: '100%'}}>
           {HomeDivShown ? 
             (<div id="HomeDiv" className="Container">
@@ -98,12 +90,9 @@ const Box = () => {
                 <div className="NavBtnWrap">
                   <button style={{flex: 1}} className="Btn" onClick={divSwitch}> Back </button>
                 </div>
-              </div>)
-          }
-        </div>
-      );
-    }
+              </div>)}
+            </div>
+        )
+      }
 
-export default Box
-
-
+export default Box;
