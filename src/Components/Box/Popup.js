@@ -1,11 +1,10 @@
 import React from 'react'
-import './PopupStyles.css'
 
 const Popup = props => {
     return (
-        <div className="popup-box">
-            <div className="box">
-            {props.content}
+        <div className="PopupBox">
+            <div className="Box">
+                {props.content}
             </div>
         </div>
     );
