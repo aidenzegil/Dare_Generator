@@ -1,10 +1,9 @@
 import React from 'react'
-import './ContactBtnStyles.css'
 import'fa'
 
 const ContactBtn = () => {
     return (
-        <div className="BtnWrapper">
+        <div className="IgWrapper">
             <a href="https://www.instagram.com/aiden_zegil/">
             <i onClick={"https://www.instagram.com/aiden_zegil/"} class="gg-instagram"/>
             </a>
