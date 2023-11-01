@@ -12,7 +12,7 @@
 /build
 
 # secret
-/src/config.js
+config
 
 # misc
 .DS_Store
