@@ -22,7 +22,6 @@ const Box = () => {
     function getDaresList() {
       onValue(daresRef, (snapshot) => {
         const newDaresList = Object.values(snapshot.val())
-        console.log(newDaresList)
         setDaresList(newDaresList)
       })
     }
